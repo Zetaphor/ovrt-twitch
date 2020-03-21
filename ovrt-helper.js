@@ -82,7 +82,7 @@ window.ovrt = {
   onWinTransformChanged: function (transformUpdate) { console.log('WinTransformChanged', transformUpdate) },
   onWinOpened: function (uid) { console.log('LocalWindowOpened', uid) },
   onWinClosed: function (uid) { console.log('WindowClosed', uid) },
-  onWinInteractionChanged: function (isInteracting) { console.log('WinInteractionChanged', isInteracting) },
+  // onWinInteractionChanged: function (isInteracting) { console.log('WinInteractionChanged', isInteracting) },
   onMessageReceived: function (message) { console.log('MessageReceived', message) },
   onWinTitlesUpdated: function (titles) { console.log('WinTitlesUpdated', titles) },
   onLog: function (logData) { console.info('ConsoleLog', logData) },

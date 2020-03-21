@@ -9,6 +9,7 @@ function openChat() {
   let username = document.getElementById('username').value
   if (!username.length) return
   console.log('Open chat', username)
-  window.open(`https://www.twitch.tv/popout/${username}/chat?popout=`, '_blank')
+  // window.open(`https://www.twitch.tv/popout/${username}/chat?popout=`, '_blank')
   localStorage.setItem('username', username)
+  ovrt.createWebWin(`https://www.twitch.tv/popout/${username}/chat?popout=`)
 }

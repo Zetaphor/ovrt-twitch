@@ -4,18 +4,20 @@ body {
   background-color: #4D5057;
   font-family: 'Catamaran', sans-serif;
   color: #ffffff;
+  overflow: hidden;
 }
 
 #twitchLogo {
   display: block;
   margin: 0 auto;
+  max-width: 90px;
 }
 
 .title {
   text-align: center;
-  font-size: 3em;
+  font-size: 40px;
   font-weight: 700;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
 .input {
@@ -23,11 +25,11 @@ body {
   margin: 0 auto;
   font-family: 'Catamaran', sans-serif;
   font-size: 1.4em;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .input input {
-  width: 400px;
+  width: 370px;
   height: 80px;
   font-family: 'Catamaran', sans-serif;
   font-size: 1.8em;
@@ -42,7 +44,7 @@ body {
 
 .purple-button {
   display: block;
-  margin: 60px auto 0 auto;
+  margin: 30px auto 0 auto;
   text-align: center;
 	box-shadow: inset 0px 1px 0px 0px #e184f3;
 	background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -58,11 +60,19 @@ body {
 	text-decoration:none;
 	text-shadow: 0px 1px 0px #9b14b3;
 }
+
 .purple-button:hover {
 	background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
 	background-color: #a20dbd;
 }
+
 .purple-button:active {
 	position: relative;
 	top: 1px;
+}
+
+.footer {
+  margin-top: 70px;
+  margin-left: 10px;
+  font-size: 13px;
 }
