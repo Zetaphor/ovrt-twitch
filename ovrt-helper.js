@@ -1,4 +1,4 @@
-window.ovrtWinSpawned = function (uid) { window.ovrt.completeWinSpawn(uid) }
+// window.ovrtWinSpawned = function (uid) { console.log('spawned'); window.ovrt.completeWinSpawn(uid) }
 window.ovrtWinDetailed = function (details) { window.ovrt.completeWinDetails(details) }
 window.ovrtWinTitles = function (titles) { console.log('Got titles proper'); window.ovrt.completeWindowTitles(titles) }
 window.ovrtMonitorTotal = function (total) { window.ovrt.totalMonitors = total }
@@ -17,7 +17,7 @@ function DevicePositionUpdate (deviceInfo) { if (window.ovrt.updateDeviceInfo) w
 function OverlayTransformChanged (updateData) { if (window.ovrt.updateWindows) window.ovrt.onWinTransformChanged(updateData) }
 function InteractionStateChanged (isInteracting) { window.ovrt.onWinInteractionChanged(isInteracting) }
 function ReceiveMessage (message) { console.info('got message'); window.ovrt.onMessageReceived(message) }
-function OverlayOpened (uid) { window.ovrt.onWinOpened(uid) }
+function OverlayOpened (uid) { window.ovrt.completeWinSpawn(uid) }
 function OverlayClosed (uid) { window.ovrt.onWinClosed(uid) }
 
 window.ovrt = {
